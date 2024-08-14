@@ -1,0 +1,477 @@
+/* reset and common code starts here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Satisfy", cursive;
+    
+font-family: "Montserrat", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Handlee", cursive;
+}
+
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+.btn{
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5%;
+    padding: 1rem 0;
+    box-shadow: .1rem .1rem .1rem black;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.section-center{
+
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* reset and common code ends here */
+
+/* header starts here */
+
+#blog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh ;
+
+}
+.logo{
+    font-size: 3rem;
+    border: 1px solid white;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    transition: .4s;
+   }
+   nav li:last-child{
+    margin-right: 0;
+   }
+nav li:hover{
+    background-color: indigo;
+    border-radius: .6rem;
+}
+.nav-link{
+   
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem;
+
+}
+#menu-icon{
+    display: none;
+}
+/* header ends here  */
+/* banner starts here */
+
+.blog-banner{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    
+}
+.blog-banner article{
+    flex-basis: 50%;
+    padding: 1rem;
+}
+.blog-banner aside{
+    flex-basis: 50%;
+    padding-left: 1rem;
+}
+.banner-img{
+    border: .3rem solid black;
+    width: 55rem;
+    height: 45rem;
+ }
+
+ .blog-header{
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: .7rem;
+    text-align: center;
+ }
+ .blog-desc{
+    font-size: 1.5rem;
+    text-align: justify;
+ }
+/* banner ends here */
+/* blog-about starts here */
+.blog-about{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 1rem;
+    background-color: #444444;
+
+}
+.about-header{
+    font-size: 8rem;
+ font-family: "Italianno", cursive;
+ color: white;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    
+    
+}
+.card{
+    flex: 1;
+    background-color: #8D8A8B;
+    margin: 1rem;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform .4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card h2{
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.about-desc{
+    font-size: 1.4rem;
+   
+    margin-bottom: 1.5rem;
+}
+.about-btn{
+    width: 80%;
+    align-self: center;
+}
+
+/* blog-about ends here */
+
+/* archives starts here */
+
+.archive-header{
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    text-align: center;
+}
+
+.archives{
+   
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+
+
+.archive-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: .1rem solid;
+    border-bottom: .1rem solid;
+
+}
+
+.archive-container ul{
+    display: flex;
+    text-align: center;
+}
+.archive-container ul li{
+    margin: 1rem;
+    transition: transform .4s;
+}
+.archive-container ul li:hover{
+    transform: scale(1.1);
+}
+.archive-image{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+}
+
+/* archive ends here */
+
+/* blog-post starts here */
+
+.blog-posts{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+   
+}
+
+.post-blog{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: .1rem .1rem .1rem #222, -0.1rem 0 .1rem #222;
+    margin: 2rem;
+    
+    transition: transform .4s;
+    
+    
+}
+.post-blog:hover{
+    transform: scale(1.1);
+}
+.post-blog aside{
+    flex: 1;
+}
+
+.post-blog article{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.post-heading{
+    font-size: 2.5rem;
+}
+article h3{
+    font-size: 1.8rem;
+}
+.post-desc{
+
+    font-size: 1.6rem;
+    margin-bottom: 2rem ;
+}
+.post-blog aside img{
+    width: 100%;
+    height: 100%;
+}
+
+.post-btn{
+    width: 30%;
+}
+/* blog post ends here */
+/* contact starts here */
+
+
+#contact-id{
+    background-color: #4c4c4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    
+}
+#contact-form{
+   
+    box-shadow: .1rem .1rem .1rem #222, -0.1rem 0 .1rem #222;
+    display: inline-block;
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+
+input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 20vh;
+}
+.contact-btn{
+    width: 30%;
+}
+
+.btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact ends here */
+
+/* footer starts here */
+
+footer{
+    background-color: black;
+    min-height: 5vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.copyright-text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.footer-icon{
+    font-size: 2.5rem;
+}
+.footer-icon:hover{
+    background-color: gray;
+}
+/* footer ends here */
+/* responsive starts here */
+
+@media (max-width: 992px){
+    .blog-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1rem ;
+    }
+    .card-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+
+    html{
+        font-size: 55%;
+    }
+    .blog-banner article{
+        width: 80%;
+    }
+    .card-container{
+        width: 80%;
+    }
+
+    .archive-container ul{
+        flex-wrap: wrap;
+    }
+    .post-blog{
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+     nav ul{
+        padding-left: 2.5rem;
+     }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 2rem 0;
+    }
+    .blog-banner{
+        min-height: auto;
+    }
+    .blog-banner article{
+        width: 90%;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    .about-blog{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+        .card-container{
+            width: 90%;
+        }
+        .post-blog{
+        
+            width: 90%;
+        }
+
+        #contact-form{
+            width: 90%;
+        }
+        .form-control{
+            flex-direction: column;
+        }
+        input,textarea{
+           max-width: 100%;
+        }
+        .form-control label{
+            margin-bottom: 1rem;
+        }
+        footer{
+            flex-direction: column;
+        }
+        #menubar2{
+           display: flex;
+        }
+    }
+
+
+
+/* responsive ends here */
